@@ -13,18 +13,18 @@
 		1A463EB21E992AE100E5F025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A463EB01E992AE100E5F025 /* Main.storyboard */; };
 		1A463EB41E992AE100E5F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A463EB31E992AE100E5F025 /* Assets.xcassets */; };
 		1A463EB71E992AE100E5F025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A463EB51E992AE100E5F025 /* LaunchScreen.storyboard */; };
-		1A463ED71E994E7700E5F025 /* ZCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A463ED61E994E7700E5F025 /* ZCKit.framework */; };
-		1A463ED91E994ED100E5F025 /* ZCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A463ED61E994E7700E5F025 /* ZCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1A9E9A411EABC2A100D24A3D /* ZCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A463ED61E994E7700E5F025 /* ZCKit.framework */; };
+		1A9E9A421EABC2A100D24A3D /* ZCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A463ED61E994E7700E5F025 /* ZCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1A463EC71E992DF900E5F025 /* Embed Frameworks */ = {
+		1A9E9A431EABC2A100D24A3D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				1A463ED91E994ED100E5F025 /* ZCKit.framework in Embed Frameworks */,
+				1A9E9A421EABC2A100D24A3D /* ZCKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +43,7 @@
 		1A463EB61E992AE100E5F025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A463EB81E992AE100E5F025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A463ED61E994E7700E5F025 /* ZCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZCKit.framework; path = ../../Products/ZCKit.framework; sourceTree = "<group>"; };
+		1A9E9A3C1EABC26300D24A3D /* ZCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZCKit.framework; path = "../build/Debug-iphoneos/ZCKit.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A463ED71E994E7700E5F025 /* ZCKit.framework in Frameworks */,
+				1A9E9A411EABC2A100D24A3D /* ZCKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +63,7 @@
 			children = (
 				1A463EA61E992AE100E5F025 /* ZCKitDemo */,
 				1A463EA51E992AE100E5F025 /* Products */,
+				1A9E9A3B1EABC26300D24A3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +108,14 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		1A9E9A3B1EABC26300D24A3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A9E9A3C1EABC26300D24A3D /* ZCKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,7 +126,7 @@
 				1A463EA01E992AE100E5F025 /* Sources */,
 				1A463EA11E992AE100E5F025 /* Frameworks */,
 				1A463EA21E992AE100E5F025 /* Resources */,
-				1A463EC71E992DF900E5F025 /* Embed Frameworks */,
+				1A9E9A431EABC2A100D24A3D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,6 +310,7 @@
 		1A463EBC1E992AE100E5F025 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8LM9AMKE5Y;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -309,6 +320,7 @@
 				);
 				INFOPLIST_FILE = ZCKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cusen.ZCKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -317,6 +329,7 @@
 		1A463EBD1E992AE100E5F025 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 8LM9AMKE5Y;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -326,6 +339,7 @@
 				);
 				INFOPLIST_FILE = ZCKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cusen.ZCKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -350,6 +364,7 @@
 				1A463EBD1E992AE100E5F025 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
