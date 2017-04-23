@@ -52,11 +52,11 @@
     return (AVCaptureVideoPreviewLayer *)self.layer;
 }
 
-#pragma mark - ZCCodeDetectionDelegate
+#pragma mark - 
 
-- (void)didDetectCodes:(NSArray *)codes {
+- (void)handelDetectCodes:(NSArray *)transformedCodes {
 
-    NSArray *transformedCodes = [self transformedCodesFromCodes:codes];
+    //NSArray *transformedCodes = [self transformedCodesFromCodes:codes];
 
     NSMutableArray *lostCodes = [self.codeLayers.allKeys mutableCopy];
 
@@ -98,9 +98,7 @@
         [self.codeLayers removeObjectForKey:stringValue];
     }
 }
-
-#pragma mark - private
-
+    
 - (NSArray *)transformedCodesFromCodes:(NSArray *)codes {
     NSMutableArray *transformedCodes = [NSMutableArray array];
     for (AVMetadataObject *code in codes) {
@@ -110,6 +108,8 @@
     }
     return transformedCodes;
 }
+    
+#pragma mark - private
 
 - (UIBezierPath *)bezierPathForBounds:(CGRect)bounds {
     return [UIBezierPath bezierPathWithRect:bounds];

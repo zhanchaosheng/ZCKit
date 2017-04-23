@@ -10,7 +10,7 @@
 #import "ZCAssetsLibrary.h"
 #import "NSFileManager+ZCAdditions.h"
 
-NSString *const ZCCameraErrorDomain = @"com.tapharmonic.ZCCameraErrorDomain";
+NSString *const ZCCameraErrorDomain = @"com.cusen.ZCCameraErrorDomain";
 NSString *const ZCThumbnailCreatedNotification = @"ZCThumbnailCreated";
 
 @interface ZCBaseCameraController () <AVCaptureFileOutputRecordingDelegate>
@@ -49,7 +49,7 @@ NSString *const ZCThumbnailCreatedNotification = @"ZCThumbnailCreated";
 		return NO;
 	}
 
-    self.videoQueue = dispatch_queue_create("com.tapharmonic.VideoQueue", NULL);
+    self.videoQueue = dispatch_queue_create("com.cusen.VideoQueue", NULL);
     
     return YES;
 }

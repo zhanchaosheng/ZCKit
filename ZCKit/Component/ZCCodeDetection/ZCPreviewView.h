@@ -10,8 +10,11 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ZCCodeDetectionDelegate.h"
 
-@interface ZCPreviewView : UIView <ZCCodeDetectionDelegate>
+@interface ZCPreviewView : UIView
 
 @property (strong, nonatomic) AVCaptureSession *session;
+    
+- (NSArray *)transformedCodesFromCodes:(NSArray *)codes;
+- (void)handelDetectCodes:(NSArray *)transformedCodes;
 
 @end
