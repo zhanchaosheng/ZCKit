@@ -23,6 +23,8 @@
 
 /* Begin PBXBuildFile section */
 		1A463E911E990B8600E5F025 /* ZCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A463E8F1E990B8600E5F025 /* ZCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A73CA5A1EAE42BA00E3A145 /* KeychainItemWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A73CA581EAE42BA00E3A145 /* KeychainItemWrapper.h */; };
+		1A73CA5B1EAE42BA00E3A145 /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A73CA591EAE42BA00E3A145 /* KeychainItemWrapper.m */; };
 		1A7E0EBC1EA2278600CA3E04 /* ZCNavBarTransparent.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7E0EBA1EA2278600CA3E04 /* ZCNavBarTransparent.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A7E0EBD1EA2278600CA3E04 /* ZCNavBarTransparent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E0EBB1EA2278600CA3E04 /* ZCNavBarTransparent.m */; };
 		1A7E0EC21EA2307400CA3E04 /* ZCSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7E0EC01EA2307400CA3E04 /* ZCSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -60,6 +62,8 @@
 		1A463E8C1E990B8600E5F025 /* ZCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A463E8F1E990B8600E5F025 /* ZCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZCKit.h; sourceTree = "<group>"; };
 		1A463E901E990B8600E5F025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A73CA581EAE42BA00E3A145 /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		1A73CA591EAE42BA00E3A145 /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 		1A7E0EBA1EA2278600CA3E04 /* ZCNavBarTransparent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCNavBarTransparent.h; sourceTree = "<group>"; };
 		1A7E0EBB1EA2278600CA3E04 /* ZCNavBarTransparent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNavBarTransparent.m; sourceTree = "<group>"; };
 		1A7E0EC01EA2307400CA3E04 /* ZCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSegmentedControl.h; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 			children = (
 				1A9E9A441EABC31D00D24A3D /* ZCAssetsLibrary.h */,
 				1A9E9A451EABC31D00D24A3D /* ZCAssetsLibrary.m */,
+				1A73CA581EAE42BA00E3A145 /* KeychainItemWrapper.h */,
+				1A73CA591EAE42BA00E3A145 /* KeychainItemWrapper.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,6 +203,7 @@
 				1A7E0EBC1EA2278600CA3E04 /* ZCNavBarTransparent.h in Headers */,
 				1A9E9A521EABC33E00D24A3D /* ZCCameraController.h in Headers */,
 				1A9E9A541EABC33E00D24A3D /* ZCCodeDetectionDelegate.h in Headers */,
+				1A73CA5A1EAE42BA00E3A145 /* KeychainItemWrapper.h in Headers */,
 				1A9E9A501EABC33E00D24A3D /* ZCBaseCameraController.h in Headers */,
 				1A9E9A551EABC33E00D24A3D /* ZCPreviewView.h in Headers */,
 			);
@@ -299,6 +306,7 @@
 				1A8E4D671EAC99F800978638 /* ZCCodeDetection.m in Sources */,
 				1A9E9A471EABC31D00D24A3D /* ZCAssetsLibrary.m in Sources */,
 				1A9E9A561EABC33E00D24A3D /* ZCPreviewView.m in Sources */,
+				1A73CA5B1EAE42BA00E3A145 /* KeychainItemWrapper.m in Sources */,
 				1A7E0EBD1EA2278600CA3E04 /* ZCNavBarTransparent.m in Sources */,
 				1A9E9A531EABC33E00D24A3D /* ZCCameraController.m in Sources */,
 				1A7E0EC31EA2307400CA3E04 /* ZCSegmentedControl.m in Sources */,
