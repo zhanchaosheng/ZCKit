@@ -35,6 +35,8 @@
 @property (nonatomic, strong, readonly) UIView *sliderView;
 // 辅助属性,当前选中的Button
 @property (nonatomic, strong, readonly) UIButton *selectButton;
+// button标题字体
+@property (nonatomic, strong) UIFont *buttonTitleFont;
 // 为选中的button颜色
 @property (nonatomic, strong) UIColor *normalColor;
 // 选中的button颜色

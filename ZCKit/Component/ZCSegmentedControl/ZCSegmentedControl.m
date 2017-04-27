@@ -94,6 +94,13 @@ void getRGBValue(CGFloat colorArr[3], UIColor *color) {
         self.sliderView.frame = frame;
     }
 }
+
+- (void)setButtonTitleFont:(UIFont *)buttonTitleFont {
+    _buttonTitleFont = buttonTitleFont;
+    for (UIButton *button in self.allButtons) {
+        button.titleLabel.font = _buttonTitleFont;
+    }
+}
     
 /* 设置边框圆角 */
 - (void)setBorderRadius:(CGFloat)radius {
@@ -159,7 +166,7 @@ void getRGBValue(CGFloat colorArr[3], UIColor *color) {
         [button setTitle:self.titles[i] forState:UIControlStateNormal];
         [button setTitleColor:self.normalColor forState:UIControlStateNormal];
         button.titleLabel.textAlignment = NSTextAlignmentCenter;
-        button.titleLabel.font = [UIFont systemFontOfSize:13.0f];
+        button.titleLabel.font = self.buttonTitleFont;
         button.backgroundColor = [UIColor clearColor];
         button.tag = ZCButtonTag + i;
         [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -174,6 +181,8 @@ void getRGBValue(CGFloat colorArr[3], UIColor *color) {
     self.edgingWidth = 1.0f;
     // 创建底部白色滑块
     [self setupSliderView];
+    // 默认按钮标题字体
+    _buttonTitleFont = [UIFont systemFontOfSize:13.0f];
     // 创建所有按钮
     [self setupAllButton];
     // 先调一下这个方法，默认选择第一个按钮
