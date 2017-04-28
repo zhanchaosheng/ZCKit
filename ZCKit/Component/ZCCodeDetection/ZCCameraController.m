@@ -8,20 +8,20 @@
 
 #import "ZCCameraController.h"
 
-@interface ZCCameraController () <AVCaptureMetadataOutputObjectsDelegate>   // 1
+@interface ZCCameraController () <AVCaptureMetadataOutputObjectsDelegate>
 @property (strong, nonatomic) AVCaptureMetadataOutput *metadataOutput;
 @end
 
 @implementation ZCCameraController
 
-- (NSString *)sessionPreset {                                               // 2
+- (NSString *)sessionPreset {
     return AVCaptureSessionPreset640x480;
 }
 
 - (BOOL)setupSessionInputs:(NSError *__autoreleasing *)error {
     BOOL success = [super setupSessionInputs:error];
     if (success) {
-        if (self.activeCamera.autoFocusRangeRestrictionSupported) {         // 3
+        if (self.activeCamera.autoFocusRangeRestrictionSupported) {
 
             if ([self.activeCamera lockForConfiguration:error]) {
 
@@ -45,7 +45,7 @@
         [self.metadataOutput setMetadataObjectsDelegate:self
                                                   queue:mainQueue];
 
-        NSArray *types = @[AVMetadataObjectTypeQRCode,                      // 1
+        NSArray *types = @[AVMetadataObjectTypeQRCode,
                            AVMetadataObjectTypeAztecCode,
                            AVMetadataObjectTypeUPCECode];
 
@@ -67,7 +67,7 @@
 didOutputMetadataObjects:(NSArray *)metadataObjects
        fromConnection:(AVCaptureConnection *)connection {
 
-    [self.codeDetectionDelegate didDetectCodes:metadataObjects];            // 2
+    [self.codeDetectionDelegate didDetectCodes:metadataObjects];
 
 }
 

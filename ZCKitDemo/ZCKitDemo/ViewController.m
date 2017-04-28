@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <ZCKit/ZCKit.h>
+#import "ScannerViewController.h"
 
 @interface ViewController ()
 
@@ -25,7 +26,7 @@
     self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
     self.navBarBgAlpha = 0.5;
     self.navBarTintColor = [UIColor orangeColor];
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"第二页"
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"扫描"
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:self
                                                                              action:@selector(rightBarButtionItemClicked:)];
@@ -55,7 +56,8 @@
 }
 
 - (void)rightBarButtionItemClicked:(id)sender {
-    
+    ScannerViewController *vc = [[ScannerViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
