@@ -28,11 +28,18 @@ typedef NS_ENUM(NSInteger, ZCScannerErrorCode) {
 @interface ZCCodeScanner : NSObject
 @property (nonatomic, weak) id<ZCCodeScannerDelegate> delegate;
 
+/// 初始化扫码环境
 - (BOOL)preparedScanner;
 
+/// 获取预览图层
 - (CALayer *)getPreviewLayer;
 
+/// 开始扫码
 - (void)startScan;
 
+/// 停止扫码
 - (void)stopScan;
+
+/// 限制设备的扫描区域，注意设备与屏幕的坐标系不同
+- (void)setScanRect:(CGRect)rect;
 @end

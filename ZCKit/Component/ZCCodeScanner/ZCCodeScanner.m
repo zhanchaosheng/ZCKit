@@ -27,7 +27,7 @@ NSString *const ZCScannerErrorDomain = @"com.cusen.ZCScannerErrorDomain";
 - (BOOL)preparedScanner {
     NSError *error;
     if ([self setupSession:&error]) {
-        self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+        self.previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
     } else {
         NSLog(@"Error: %@", [error localizedDescription]);
         if ([self.delegate respondsToSelector:@selector(failScan:)]) {
@@ -58,6 +58,10 @@ NSString *const ZCScannerErrorDomain = @"com.cusen.ZCScannerErrorDomain";
     }
 }
 
+- (void)setScanRect:(CGRect)rect {
+    [self.metadataOutput setRectOfInterest:rect];
+}
+
 #pragma mark - getter & setter
 
 - (AVCaptureVideoPreviewLayer *)previewLayer {
@@ -72,7 +76,7 @@ NSString *const ZCScannerErrorDomain = @"com.cusen.ZCScannerErrorDomain";
 - (BOOL)setupSession:(NSError **)error {
     
     self.captureSession = [[AVCaptureSession alloc] init];
-    self.captureSession.sessionPreset = AVCaptureSessionPreset640x480;
+    self.captureSession.sessionPreset = AVCaptureSessionPresetHigh; // AVCaptureSessionPreset640x480
     
     if (![self setupSessionInputs:error]) {
         return NO;

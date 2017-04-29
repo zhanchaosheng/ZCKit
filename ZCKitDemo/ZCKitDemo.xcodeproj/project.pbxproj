@@ -13,6 +13,7 @@
 		1A463EB21E992AE100E5F025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A463EB01E992AE100E5F025 /* Main.storyboard */; };
 		1A463EB41E992AE100E5F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A463EB31E992AE100E5F025 /* Assets.xcassets */; };
 		1A463EB71E992AE100E5F025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A463EB51E992AE100E5F025 /* LaunchScreen.storyboard */; };
+		1A8D5D351EB4C53700303EAB /* CodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D5D341EB4C53700303EAB /* CodeScannerViewController.m */; };
 		1A9E9A411EABC2A100D24A3D /* ZCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A463ED61E994E7700E5F025 /* ZCKit.framework */; };
 		1A9E9A421EABC2A100D24A3D /* ZCKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A463ED61E994E7700E5F025 /* ZCKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		1AA4C7E01EB38B24003D1CE7 /* ScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AA4C7DF1EB38B24003D1CE7 /* ScannerViewController.m */; };
@@ -44,6 +45,8 @@
 		1A463EB61E992AE100E5F025 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A463EB81E992AE100E5F025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A463ED61E994E7700E5F025 /* ZCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZCKit.framework; path = ../../Products/ZCKit.framework; sourceTree = "<group>"; };
+		1A8D5D331EB4C53700303EAB /* CodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeScannerViewController.h; sourceTree = "<group>"; };
+		1A8D5D341EB4C53700303EAB /* CodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeScannerViewController.m; sourceTree = "<group>"; };
 		1A9E9A3C1EABC26300D24A3D /* ZCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZCKit.framework; path = "../build/Debug-iphoneos/ZCKit.framework"; sourceTree = "<group>"; };
 		1AA4C7DE1EB38B24003D1CE7 /* ScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScannerViewController.h; sourceTree = "<group>"; };
 		1AA4C7DF1EB38B24003D1CE7 /* ScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScannerViewController.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 				1A463EAE1E992AE100E5F025 /* ViewController.m */,
 				1AA4C7DE1EB38B24003D1CE7 /* ScannerViewController.h */,
 				1AA4C7DF1EB38B24003D1CE7 /* ScannerViewController.m */,
+				1A8D5D331EB4C53700303EAB /* CodeScannerViewController.h */,
+				1A8D5D341EB4C53700303EAB /* CodeScannerViewController.m */,
 				1A463EB01E992AE100E5F025 /* Main.storyboard */,
 				1A463EB31E992AE100E5F025 /* Assets.xcassets */,
 				1A463EB51E992AE100E5F025 /* LaunchScreen.storyboard */,
@@ -195,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A463EAF1E992AE100E5F025 /* ViewController.m in Sources */,
+				1A8D5D351EB4C53700303EAB /* CodeScannerViewController.m in Sources */,
 				1A463EAC1E992AE100E5F025 /* AppDelegate.m in Sources */,
 				1A463EA91E992AE100E5F025 /* main.m in Sources */,
 				1AA4C7E01EB38B24003D1CE7 /* ScannerViewController.m in Sources */,

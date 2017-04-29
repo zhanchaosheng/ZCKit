@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import <ZCKit/ZCKit.h>
-#import "ScannerViewController.h"
+//#import "ScannerViewController.h"
+#import "CodeScannerViewController.h"
 
 @interface ViewController ()
 
@@ -56,7 +57,8 @@
 }
 
 - (void)rightBarButtionItemClicked:(id)sender {
-    ScannerViewController *vc = [[ScannerViewController alloc] init];
+    //ScannerViewController *vc = [[ScannerViewController alloc] init];
+    CodeScannerViewController *vc = [[CodeScannerViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
