@@ -20,6 +20,8 @@ FOUNDATION_EXPORT const unsigned char ZCKitVersionString[];
 #import <ZCKit/ZCSegmentedControl.h>
 #import <ZCKit/ZCAssetsLibrary.h>
 #import <ZCKit/ZCCodeDetection.h>
+#import <ZCKit/ZCCodeScanner.h>
+#import <ZCKit/CodeScannerViewController.h>
 
 #import <ZCKit/NSTimer+ZCAdditions.h>
 #import <ZCKit/UIView+ZCAdditions.h>

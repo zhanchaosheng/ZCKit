@@ -29,6 +29,10 @@
 		1A7E0EBD1EA2278600CA3E04 /* ZCNavBarTransparent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E0EBB1EA2278600CA3E04 /* ZCNavBarTransparent.m */; };
 		1A7E0EC21EA2307400CA3E04 /* ZCSegmentedControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7E0EC01EA2307400CA3E04 /* ZCSegmentedControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A7E0EC31EA2307400CA3E04 /* ZCSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A7E0EC11EA2307400CA3E04 /* ZCSegmentedControl.m */; };
+		1A8D5D2F1EB48FE500303EAB /* CodeScannerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8D5D2B1EB48FE500303EAB /* CodeScannerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A8D5D301EB48FE500303EAB /* CodeScannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D5D2C1EB48FE500303EAB /* CodeScannerViewController.m */; };
+		1A8D5D311EB48FE500303EAB /* ZCCodeScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8D5D2D1EB48FE500303EAB /* ZCCodeScanner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A8D5D321EB48FE500303EAB /* ZCCodeScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8D5D2E1EB48FE500303EAB /* ZCCodeScanner.m */; };
 		1A8E4D661EAC99F800978638 /* ZCCodeDetection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8E4D641EAC99F800978638 /* ZCCodeDetection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A8E4D671EAC99F800978638 /* ZCCodeDetection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8E4D651EAC99F800978638 /* ZCCodeDetection.m */; };
 		1A8E4D6E1EACAD8400978638 /* NSFileManager+ZCAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A8E4D681EACAD8400978638 /* NSFileManager+ZCAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -68,6 +72,10 @@
 		1A7E0EBB1EA2278600CA3E04 /* ZCNavBarTransparent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCNavBarTransparent.m; sourceTree = "<group>"; };
 		1A7E0EC01EA2307400CA3E04 /* ZCSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCSegmentedControl.h; sourceTree = "<group>"; };
 		1A7E0EC11EA2307400CA3E04 /* ZCSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCSegmentedControl.m; sourceTree = "<group>"; };
+		1A8D5D2B1EB48FE500303EAB /* CodeScannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeScannerViewController.h; sourceTree = "<group>"; };
+		1A8D5D2C1EB48FE500303EAB /* CodeScannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeScannerViewController.m; sourceTree = "<group>"; };
+		1A8D5D2D1EB48FE500303EAB /* ZCCodeScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCodeScanner.h; sourceTree = "<group>"; };
+		1A8D5D2E1EB48FE500303EAB /* ZCCodeScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCodeScanner.m; sourceTree = "<group>"; };
 		1A8E4D641EAC99F800978638 /* ZCCodeDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCodeDetection.h; sourceTree = "<group>"; };
 		1A8E4D651EAC99F800978638 /* ZCCodeDetection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCCodeDetection.m; sourceTree = "<group>"; };
 		1A8E4D681EACAD8400978638 /* NSFileManager+ZCAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ZCAdditions.h"; sourceTree = "<group>"; };
@@ -144,6 +152,7 @@
 		1A7E0EB91EA2271800CA3E04 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1A8D5D2A1EB48FE500303EAB /* ZCCodeScanner */,
 				1A9E9A481EABC33E00D24A3D /* ZCCodeDetection */,
 				1A7E0EBF1EA2307400CA3E04 /* ZCSegmentedControl */,
 			);
@@ -168,6 +177,17 @@
 				1A7E0EC11EA2307400CA3E04 /* ZCSegmentedControl.m */,
 			);
 			path = ZCSegmentedControl;
+			sourceTree = "<group>";
+		};
+		1A8D5D2A1EB48FE500303EAB /* ZCCodeScanner */ = {
+			isa = PBXGroup;
+			children = (
+				1A8D5D2B1EB48FE500303EAB /* CodeScannerViewController.h */,
+				1A8D5D2C1EB48FE500303EAB /* CodeScannerViewController.m */,
+				1A8D5D2D1EB48FE500303EAB /* ZCCodeScanner.h */,
+				1A8D5D2E1EB48FE500303EAB /* ZCCodeScanner.m */,
+			);
+			path = ZCCodeScanner;
 			sourceTree = "<group>";
 		};
 		1A9E9A481EABC33E00D24A3D /* ZCCodeDetection */ = {
@@ -198,6 +218,7 @@
 				1A8E4D721EACAD8400978638 /* UIView+ZCAdditions.h in Headers */,
 				1A8E4D661EAC99F800978638 /* ZCCodeDetection.h in Headers */,
 				1A7E0EC21EA2307400CA3E04 /* ZCSegmentedControl.h in Headers */,
+				1A8D5D2F1EB48FE500303EAB /* CodeScannerViewController.h in Headers */,
 				1A8E4D701EACAD8400978638 /* NSTimer+ZCAdditions.h in Headers */,
 				1A8E4D6E1EACAD8400978638 /* NSFileManager+ZCAdditions.h in Headers */,
 				1A7E0EBC1EA2278600CA3E04 /* ZCNavBarTransparent.h in Headers */,
@@ -206,6 +227,7 @@
 				1A73CA5A1EAE42BA00E3A145 /* KeychainItemWrapper.h in Headers */,
 				1A9E9A501EABC33E00D24A3D /* ZCBaseCameraController.h in Headers */,
 				1A9E9A551EABC33E00D24A3D /* ZCPreviewView.h in Headers */,
+				1A8D5D311EB48FE500303EAB /* ZCCodeScanner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +324,14 @@
 			files = (
 				1A8E4D711EACAD8400978638 /* NSTimer+ZCAdditions.m in Sources */,
 				1A9E9A511EABC33E00D24A3D /* ZCBaseCameraController.m in Sources */,
+				1A8D5D301EB48FE500303EAB /* CodeScannerViewController.m in Sources */,
 				1A8E4D6F1EACAD8400978638 /* NSFileManager+ZCAdditions.m in Sources */,
 				1A8E4D671EAC99F800978638 /* ZCCodeDetection.m in Sources */,
 				1A9E9A471EABC31D00D24A3D /* ZCAssetsLibrary.m in Sources */,
 				1A9E9A561EABC33E00D24A3D /* ZCPreviewView.m in Sources */,
 				1A73CA5B1EAE42BA00E3A145 /* KeychainItemWrapper.m in Sources */,
 				1A7E0EBD1EA2278600CA3E04 /* ZCNavBarTransparent.m in Sources */,
+				1A8D5D321EB48FE500303EAB /* ZCCodeScanner.m in Sources */,
 				1A9E9A531EABC33E00D24A3D /* ZCCameraController.m in Sources */,
 				1A7E0EC31EA2307400CA3E04 /* ZCSegmentedControl.m in Sources */,
 				1A8E4D731EACAD8400978638 /* UIView+ZCAdditions.m in Sources */,
