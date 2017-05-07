@@ -50,6 +50,8 @@
 		1A9E9A541EABC33E00D24A3D /* ZCCodeDetectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9E9A4D1EABC33E00D24A3D /* ZCCodeDetectionDelegate.h */; };
 		1A9E9A551EABC33E00D24A3D /* ZCPreviewView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9E9A4E1EABC33E00D24A3D /* ZCPreviewView.h */; };
 		1A9E9A561EABC33E00D24A3D /* ZCPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9E9A4F1EABC33E00D24A3D /* ZCPreviewView.m */; };
+		1AEC9BAA1EBF1E1200055914 /* ZCScrolledNoticeView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AEC9BA81EBF1E1200055914 /* ZCScrolledNoticeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AEC9BAB1EBF1E1200055914 /* ZCScrolledNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEC9BA91EBF1E1200055914 /* ZCScrolledNoticeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		1A9E9A4D1EABC33E00D24A3D /* ZCCodeDetectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCCodeDetectionDelegate.h; sourceTree = "<group>"; };
 		1A9E9A4E1EABC33E00D24A3D /* ZCPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCPreviewView.h; sourceTree = "<group>"; };
 		1A9E9A4F1EABC33E00D24A3D /* ZCPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCPreviewView.m; sourceTree = "<group>"; };
+		1AEC9BA81EBF1E1200055914 /* ZCScrolledNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZCScrolledNoticeView.h; sourceTree = "<group>"; };
+		1AEC9BA91EBF1E1200055914 /* ZCScrolledNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZCScrolledNoticeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 		1A7E0EB91EA2271800CA3E04 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				1AEC9BA71EBF1E1200055914 /* ZCScrolledNoticeView */,
 				1A8D5D3A1EB4C7B500303EAB /* ZCQRCodeUtil */,
 				1A8D5D2A1EB48FE500303EAB /* ZCCodeScanner */,
 				1A9E9A481EABC33E00D24A3D /* ZCCodeDetection */,
@@ -214,6 +219,15 @@
 			path = ZCCodeDetection;
 			sourceTree = "<group>";
 		};
+		1AEC9BA71EBF1E1200055914 /* ZCScrolledNoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				1AEC9BA81EBF1E1200055914 /* ZCScrolledNoticeView.h */,
+				1AEC9BA91EBF1E1200055914 /* ZCScrolledNoticeView.m */,
+			);
+			path = ZCScrolledNoticeView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -235,6 +249,7 @@
 				1A73CA5A1EAE42BA00E3A145 /* KeychainItemWrapper.h in Headers */,
 				1A9E9A501EABC33E00D24A3D /* ZCBaseCameraController.h in Headers */,
 				1A9E9A551EABC33E00D24A3D /* ZCPreviewView.h in Headers */,
+				1AEC9BAA1EBF1E1200055914 /* ZCScrolledNoticeView.h in Headers */,
 				1A8D5D311EB48FE500303EAB /* ZCCodeScanner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +354,7 @@
 				1A73CA5B1EAE42BA00E3A145 /* KeychainItemWrapper.m in Sources */,
 				1A7E0EBD1EA2278600CA3E04 /* ZCNavBarTransparent.m in Sources */,
 				1A8D5D3E1EB4C7D100303EAB /* ZCQRCodeUtil.m in Sources */,
+				1AEC9BAB1EBF1E1200055914 /* ZCScrolledNoticeView.m in Sources */,
 				1A8D5D321EB48FE500303EAB /* ZCCodeScanner.m in Sources */,
 				1A9E9A531EABC33E00D24A3D /* ZCCameraController.m in Sources */,
 				1A7E0EC31EA2307400CA3E04 /* ZCSegmentedControl.m in Sources */,
